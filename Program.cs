@@ -31,6 +31,19 @@ namespace ConsoleApp020923
             }
             Console.WriteLine();
 
+            Console.WriteLine("Другий варіант реалізації\n");
+            Dictionary<string, List<Employee>> cafe2 = new Dictionary<string, List<Employee>>();
+            cafe2.Add("CoffeGeyser 2.0", new List<Employee>());
+            cafe2["CoffeGeyser 2.0"].Add(new Employee("Василь", "Бариста"));
+            cafe2["CoffeGeyser 2.0"].Add(new Employee("Петро Васильович", "Власник"));
+            cafe2["CoffeGeyser 2.0"].Add(new Employee("Іван", "Бариста"));
+            cafe2["CoffeGeyser 2.0"].Add(new Employee("Марія", "Офіціант"));
+            Console.WriteLine($"Кафе: {cafe2.Keys.First()}");
+            Console.WriteLine("Список працівників:");
+            foreach (var item in cafe2.Values.First())
+            {
+                Console.WriteLine(item);
+            }
 
         }
     }

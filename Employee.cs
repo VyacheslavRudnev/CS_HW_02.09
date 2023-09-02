@@ -17,7 +17,7 @@ namespace ConsoleApp020923
         }
         public override string ToString()
         {
-            return $"Name: {Name}, Position: {Position}";
+            return $"{Name}, {Position}";
         }
     }
 }
