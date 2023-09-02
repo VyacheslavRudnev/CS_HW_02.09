@@ -8,7 +8,7 @@ namespace ConsoleApp020923
 {
     public class Oceanarium
     {
-        List<Pets> pets { get; set; }
+        public List<Pets> pets { get; set; }
         public Oceanarium()
         {
             pets = new List<Pets>();
