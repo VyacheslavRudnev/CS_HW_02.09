@@ -17,7 +17,9 @@ namespace ConsoleApp020923
             Console.InputEncoding = Encoding.Unicode;
             Console.OutputEncoding = Encoding.Unicode;
 
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Перший варіант реалізації");
+            Console.ResetColor();
             Oceanarium oceanarium = new Oceanarium();
             oceanarium.Add(new Pets("Dolphin", "Mammal", 5));
             oceanarium.Add(new Pets("Shark", "Fish", 10));
@@ -41,8 +43,9 @@ namespace ConsoleApp020923
             {
                 Console.WriteLine($"{pet.Name} - {pet.Type} - {pet.Age}");
             }
-
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\nДругий варіант реалізації");
+            Console.ResetColor();
             List<Oceanarium> oceanarium2 = new List<Oceanarium>();
             oceanarium2.Add(new Oceanarium());
             oceanarium2[0].Add(new Pets("Dolphin", "Mammal", 5));
@@ -67,10 +70,6 @@ namespace ConsoleApp020923
             {
                 Console.WriteLine($"{pet.Name} - {pet.Type} - {pet.Age}");
             }
-
-
-
-
         }
     }
 }
